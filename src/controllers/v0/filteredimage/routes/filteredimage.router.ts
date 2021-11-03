@@ -39,7 +39,7 @@ router.get("/", async (req, res) => {
     });
   } catch (err) {
 
-    res.status(406).send("Invalid URL");
+    res.status(422).send("Invalid URL");
   }
 
 
