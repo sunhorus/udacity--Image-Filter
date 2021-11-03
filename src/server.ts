@@ -15,11 +15,11 @@ import { IndexRouter } from './controllers/v0/index.router';
   app.use(bodyParser.json());
 
 
-  app.use('/', IndexRouter)
+  app.use('/api/v1/', IndexRouter)
 
 
   app.get( "/", async ( req, res ) => {
-    res.send( "/filteredImage" );
+    res.send( "/api/v1/" );
   } );
 
 
